@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="car.js"></script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+MathJax.Hub.Config({
+  "HTML-CSS": {
+    availableFonts: [],
+    preferredFont: null,
+    /*webFont: "Latin-Modern"*/
+  },
+tex2jax: {
+					inlineMath: [['$','$']],
+					displayMath: [['\\[','\\]']],
+					processEscapes: true
+				}
+});</script>
+
+</head>
+
+<body>
+<center>
+	<h1>Integration Bee Ionesco 2024</h1>
+<table>
+<td><div id="cadrejoueura">Joueur 1</id></td><td><div id="cadrescore">0</id></td>
+</td><td><div id="cadrescore">0</id></td><td><div id="cadrejoueura">Joueur 2</id>
+</table>
+<input type="button" value="Intégrale 1" onclick="masquer_div('calcul1');" />
+<input type="button" value="Intégrale 2" onclick="masquer_div('calcul2');" />
+<input type="button" value="Intégrale 3" onclick="masquer_div('calcul3');" />
+
+<div id="calcul1" style="display:none">
+<table>
+<td><div id="div1" style="visibility: hidden; font-size:30px">3</div></td>
+<td><div id="div2" style="visibility: hidden; font-size:30px">2</div></td>
+<td><div id="div3" style="visibility: hidden; font-size:30px">1</div></td>
+</table>
+<div id="div4" style="visibility: hidden; font-size:30px">Intégrez !</div>
+<div id="div5" style="visibility: hidden;"><div id="cadrecalcul">\[\int_a^bf(t)\ \mathrm{d}t\]</div></div>
+</div>
+
+<div id="calcul2" style="display:none">
+<div id="cadrecalcul">\[\int_a^bf(t)\ \mathrm{d}t\]</div>
+</div>
+
+<div id="calcul3" style="display:none">
+<div id="cadrecalcul">\[\int_a^bf(t)\ \mathrm{d}t\]</div>
+</div>
+</center>
+	
+
+</body>
